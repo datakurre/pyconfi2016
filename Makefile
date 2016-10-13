@@ -2,7 +2,7 @@ TEXFILE := presentation
 
 all: $(TEXFILE).pdf
 
-$(TEXFILE).pdf: $(TEXFILE).tex
+$(TEXFILE).pdf: $(TEXFILE).tex images icons
 	@latexmk -pdf -recorder -interaction=nonstopmode -shell-escape -use-make -quiet $(TEXFILE)
 
 watch:
