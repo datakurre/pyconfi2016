@@ -1,2 +1,5 @@
 language: nix
 script: nix-shell --run make
+cache:
+- images
+- icons
