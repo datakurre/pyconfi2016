@@ -4,7 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern,charter}
-\usepackage{microtype}
+\usepackage[letterspace=50]{microtype}
 \usepackage{textcomp}
 \usepackage{upquote}
 
@@ -25,7 +25,7 @@
 
 % Various
 \usepackage[outline]{contour}
-\contourlength{2.0pt}
+\contourlength{1.0pt}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{minted}
@@ -46,22 +46,20 @@
   \begin{columns}[onlytextwidth]
     \begin{column}{0.45\textwidth}
     \end{column}
-    \begin{column}{0.40\textwidth}
+    \begin{column}{0.45\textwidth}
       \vspace{1.0cm}
+      \par
+      \centering
+      \href{https://iki.fi/asko.soukka/}{Asko Soukka}
+      \vspace{1.0cm}
+      \par
       \Huge
       \bfseries
-      \par Presentation Template\par
-      \vspace{0.5cm}
+      Presentation Template
+      \par
       \large
       \mdseries
-      by \href{https://iki.fi/asko.soukka/}{Asko Soukka}
-%     \vspace{0.5cm}
-%     \normalsize
-%     \begin{itemize}[leftmargin=0pt,label=\textbullet]
-%       \item \href{https://github.com/datakurre}{github.com/datakurre}
-%       \item \href{https://twitter.com/datakurre}{twitter.com/datakurre}
-%     \end{itemize}
-      \vspace{2.0cm}\par
+      \vspace{1.0cm}\par
       \href{https://www.jyu.fi/}{\includegraphics[width=4cm]{images/logo.eps}}
     \end{column}
   \end{columns}
@@ -78,6 +76,7 @@
   \centering
   \Huge
   \bfseries
+  \lsstyle
   \contour{white}{Hello there!}
 \end{frame}
 }
@@ -108,6 +107,7 @@
   \centering
   \Huge
   \bfseries
+  \lsstyle
   \contour{white}{What's up?}
 \end{frame}
 }
@@ -167,6 +167,7 @@
   \centering
   \Huge
   \bfseries
+  \lsstyle
   \contour{white}{Isn't that cute?}
 \end{frame}
 }
@@ -197,6 +198,7 @@ ENTRYPOINT ["/bin/app"]
   \centering
   \Huge
   \bfseries
+  \lsstyle
   \contour{white}{Questions?}
 \end{frame}
 }
