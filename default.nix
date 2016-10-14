@@ -38,6 +38,7 @@ stdenv.mkDerivation rec {
         xstring;
     })
     curl
+    ghostscript
     gnumake
     pythonPackages.pygments
     unzip
