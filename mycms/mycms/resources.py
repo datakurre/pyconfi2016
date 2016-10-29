@@ -10,6 +10,7 @@ from substanced.schema import (
     NameSchemaNode
     )
 from substanced.util import renamer
+from substanced.workflow import pub_workflow
 
 def context_is_a_document(context, request):
     return request.registry.content.istype(context, 'Document')
@@ -44,3 +45,4 @@ class Document(Persistent):
 
 def includeme(config): # pragma: no cover
     config.add_propertysheet('Basic', DocumentPropertySheet, Document)
+    config.add_workflow(pub_workflow, ('Document',))

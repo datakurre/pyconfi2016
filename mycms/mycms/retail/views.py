@@ -19,6 +19,7 @@ def splash_view(request):
 @view_config(
     context=Document,
     renderer='templates/document.pt',
+    permission='view'
     )
 def document_view(context, request):
     return {'title': context.title,
