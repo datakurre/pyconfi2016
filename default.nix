@@ -1,4 +1,8 @@
-with import <nixpkgs> {};
+{ pkgs ? import (builtins.fetchTarball
+  "https://github.com/nixos/nixpkgs-channels/archive/adfcc2d9531e78bf6a9e3b56e2f4fc873cb3d87b.tar.gz") {}
+}:
+
+with pkgs;
 
 stdenv.mkDerivation rec {
   name = "env";

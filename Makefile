@@ -1,4 +1,4 @@
-TEXFILE := presentation
+TEXFILE ?= slides
 
 all: $(TEXFILE).pdf
 
@@ -13,33 +13,11 @@ clean:
 	@rm -f *.nav *.snm *.fls *.vrb _minted-$(TEXFILE)/*
 	@if [ -d _minted-$(TEXFILE) ]; then rmdir _minted-$(TEXFILE); fi
 
-.PHONY: all clean watch
+.PHONY: all clean notebook watch
 
 ###
 
-images: images/cover.jpg images/logo.eps
-images: images/interlude-01.jpg images/interlude-02.jpg
-images: images/interlude-03.jpg images/interlude-04.jpg
-
-images/cover.jpg:
-	@mkdir -p images
-	curl http://placekitten.com/800/900 -o images/cover.jpg
-
-images/interlude-01.jpg:
-	@mkdir -p images
-	curl http://placekitten.com/1601/900 -o images/interlude-01.jpg
-
-images/interlude-02.jpg:
-	@mkdir -p images
-	curl http://placekitten.com/1602/900 -o images/interlude-02.jpg
-
-images/interlude-03.jpg:
-	@mkdir -p images
-	curl http://placekitten.com/1603/900 -o images/interlude-03.jpg
-
-images/interlude-04.jpg:
-	@mkdir -p images
-	curl http://placekitten.com/1604/900 -o images/interlude-04.jpg
+images: images/logo.eps
 
 images/logo.eps:
 	@mkdir -p images
