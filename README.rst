@@ -2,6 +2,20 @@
    :alt: Travis CI badge
    :target: http://travis-ci.org/datakurre/pyconfi2016
 
+Summary
+=======
+
+From the `ZODB mailing list`_ inntroduction:
+
+    ”ZODB has significant advantages over other persistence technologies.  In
+    relational databases it is hard and slow to store a tree.  JSON databases
+    do store trees but not graphs.  MongoDB has problems with fine-grained
+    transaction management across document boundaries. PostgreSQL has excellent
+    transaction management, but does not support arrays of heterogeneous
+    objects.  And of course once you are in a pure dynamic Python environment,
+    there are all kinds of things that you can do that you could not even
+    imagine doing with a traditional database.”
+
 Contents
 ========
 
@@ -25,14 +39,15 @@ Contents
 
 .. _SubstanceD: http://substanced.net/
 
+
 Links
 =====
 
 zodb.org_
-    Official ZODB documentation
+    Official ZODB documentation, tutorial and links to relate material.
 
-`ZODB Google Group`_
-    Official ZODB "Users group"
+`ZODB mailing list`_
+    Official ZODB mailing list for dicussion about ZODB and asking for help.
 
 .. _zodb.org: http://zodb.org/
-.. _ZODB Google Group: https://groups.google.com/forum/#!forum/zodb
+.. _ZODB mailing list: https://groups.google.com/forum/#!forum/zodb
