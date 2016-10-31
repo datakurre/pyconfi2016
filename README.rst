@@ -24,3 +24,15 @@ Contents
     (to be started with ``pserve development.ini``)
 
 .. _SubstanceD: http://substanced.net/
+
+Links
+=====
+
+zodb.org_
+    Official ZODB documentation
+
+`ZODB Google Group`_
+    Official ZODB "Users group"
+
+.. _zodb.org: http://zodb.org/
+.. _ZODB Google Group: https://groups.google.com/forum/#!forum/zodb
