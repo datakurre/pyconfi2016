@@ -5,7 +5,7 @@
 Summary
 =======
 
-From the `ZODB mailing list`_ inntroduction:
+From the `ZODB mailing list`_ introduction:
 
     ”ZODB has significant advantages over other persistence technologies.  In
     relational databases it is hard and slow to store a tree.  JSON databases
