@@ -13,7 +13,7 @@ Contents
 
 ``requirements.txt``
     ``pip install -r requirements.txt`` for the Jupyter notebook with
-    required Python dependencies
+    required Python dependencies (to be started with ``jupyter notebook``.
 
 ``mycms/``
     Example SubstanceD_ application created with ``pcreate -s substanced
